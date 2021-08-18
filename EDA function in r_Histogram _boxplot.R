@@ -5,8 +5,8 @@
 quick_analysis= function(pen){
   data = students_performance
   library(ggplot2)
-  histogramm<- ggplot(data,aes(pen))+geom_histogram(fill="white",colour="black")+ggtitle("histogram of" )
-  boxplott<- ggplot(data,aes(pen))+geom_boxplot(fill="dark green", colour="black")+ggtitle("boxplot of (pen)")
+  histogramm<- ggplot(data,aes(pen))+geom_histogram(fill="white",colour="black")+ggtitle("histogram of pen" )
+  boxplott<- ggplot(data,aes(pen))+geom_boxplot(fill="dark green", colour="black")+ggtitle("boxplot of pen")
   print(histogramm)
   print(boxplott)
 }
